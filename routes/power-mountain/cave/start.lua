@@ -1,6 +1,6 @@
-local display = require( 'display' );
-local c = require( 'common' );
-local utils = require( 'utils' );
+local display = require( 'illuamination/display' );
+local c = require( 'illuamination/common' );
+local utils = require( 'illuamination/utils' );
 local cave = require( 'pics/cave' );
 local txt = require( 'routes/power-mountain/cave/_start-text' )();
 

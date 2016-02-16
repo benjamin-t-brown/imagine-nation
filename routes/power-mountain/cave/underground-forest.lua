@@ -1,6 +1,6 @@
-local display = require( 'display' );
-local c = require( 'common' );
-local utils = require( 'utils' );
+local display = require( 'illuamination/display' );
+local c = require( 'illuamination/common' );
+local utils = require( 'illuamination/utils' );
 
 return function( main )
 	local txt = require( 'routes/power-mountain/cave/_underground-forest-text' )();

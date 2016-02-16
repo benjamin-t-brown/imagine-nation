@@ -5,7 +5,7 @@ io.write( 'IO test 2.\n\n' );
 
 local display = require( 'display' );
 local c = require( 'common' );
-local logo = require( 'pics/logo' );
+local logo = require( '../pics/logo' );
 
 print( 'Logo test:' );
 c.pic( logo.logo() );

@@ -1,1 +1,0 @@
-lua-interpreter.exe main.lua

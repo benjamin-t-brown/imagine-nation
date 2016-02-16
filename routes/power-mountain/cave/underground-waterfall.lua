@@ -1,6 +1,6 @@
-local display = require( 'display' );
-local c = require( 'common' );
-local utils = require( 'utils' );
+local display = require( 'illuamination/display' );
+local c = require( 'illuamination/common' );
+local utils = require( 'illuamination/utils' );
 local txt = require( 'routes/power-mountain/cave/_underground-waterfall-text' )();
 
 return function( main )

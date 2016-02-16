@@ -1,5 +1,5 @@
-local display = require( '../display' );
-local c = require( '../common' );
+local display = require( 'illuamination/display' );
+local c = require( 'illuamination/common' );
 
 return function( main )
 	c.setup();

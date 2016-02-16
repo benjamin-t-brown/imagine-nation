@@ -1,8 +1,8 @@
-local utils = require( 'utils' );
-local display = require( 'display' );
-local c = require( 'common' );
-require( 'data' );
-require( 'input' );
+local utils = require( 'illuamination/utils' );
+local display = require( 'illuamination/display' );
+local c = require( 'illuamination/common' );
+require( 'illuamination/data' );
+require( 'illuamination/input' );
 
 -- function Tile:new( pic )
 -- 	local o = {
@@ -29,16 +29,16 @@ set_route = function( route_name )
 	end
 end,
 
-data = require( 'data' )();
+data = require( 'illuamination/data' )();
 
 };
 
-local save = require( 'data' )();
---save.conscience.in_party = true;
+local save = require( 'illuamination/data' )();
+save.conscience.in_party = true;
 --save.conscience.standing = 11;
 --table.insert( save.inventory, 1, 'Dry Wood' );
---save.route_name = 'power-mountain/outside-temple-snowy';
-save.route_name = 'power-mountain/cave/main-cave';
+save.route_name = 'power-mountain/outside-temple-snowy';
+--save.route_name = 'power-mountain/cave/main-cave';
 c.load_save( save, main );
 
 while has_route do

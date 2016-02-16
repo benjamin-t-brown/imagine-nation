@@ -1,4 +1,4 @@
-local display = require( 'display' )
+local display = require( 'illuamination/display' )
 
 return {
 

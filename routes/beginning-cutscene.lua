@@ -1,6 +1,6 @@
-local display = require( 'display' );
-local c = require( 'common' );
-local utils = require( 'utils' );
+local display = require( 'illuamination/display' );
+local c = require( 'illuamination/common' );
+local utils = require( 'illuamination/utils' );
 local portalpic = require( 'pics/portal' );
 local txt = require( 'routes/_beginning-cutscene-text' )();
 

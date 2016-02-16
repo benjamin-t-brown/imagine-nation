@@ -1,5 +1,5 @@
-local display = require( 'display' );
-local c = require( 'common' );
+local display = require( 'illuamination/display' );
+local c = require( 'illuamination/common' );
 local door = require( 'pics/door' );
 local cave = require( 'pics/cave' );
 local conscience = require( 'pics/conscience' );

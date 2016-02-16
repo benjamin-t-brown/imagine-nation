@@ -1,6 +1,6 @@
-local display = require( '/display' );
-local utils = require( 'utils' );
-local input = require( 'input' );
+local display = require( 'illuamination/display' );
+local utils = require( 'illuamination/utils' );
+local input = require( 'illuamination/input' );
 --http://asciiflow.com/
 -- Dumb way I'm using to call functions in this file from this file
 local ret = {};
