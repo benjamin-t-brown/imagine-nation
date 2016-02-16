@@ -1,6 +1,15 @@
 ODT = $(shell find . -name "*.odt")
+TXT = $(ODT:.odt=.txt)
+EMP = $(ODT:.odt=)
 
-all: $(ODT)
+all: $(EMP)
+	echo "done"
 
-%.odt: %.txt
-	odt2txt.exe --width=-1 --output=$< $@
+.PHONY: $(ODT)
+
+%:
+	odt2txt.exe --width=70 --output=$*.txt $*.odt
+	node compile-text.js $*.txt
+
+clean:
+	rm -f $(TXT)

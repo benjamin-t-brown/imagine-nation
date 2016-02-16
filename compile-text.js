@@ -2,11 +2,8 @@
 
 var fs = require( 'fs' );
 var SPLSTR = 'AdalaisEldridge';
+var NEWLINE = 'NEWLINE';
 var args = process.argv.slice( 2 );
-
-function addslashes( str ) {
-	return ( str + '' ).replace( /[\\"']/g, '\\$&' ).replace( /\u0000/g, '\\0' );
-}
 
 var compile = function( text ) {
 	var matches = text.match( /\- (.*) \-/g );
@@ -16,11 +13,11 @@ var compile = function( text ) {
 		subtext = subtext
 			.replace( /\r/g, '' )
 			.replace( /\n\n/g, SPLSTR )
-			.replace( /\n/g, '' );
+			.replace( /\n/g, NEWLINE );
 
 		var ret = 'return function() \nreturn {\n ' + subtext.split( SPLSTR ).slice( 1 ).map(
 			function( dialogue, i ) {
-				return '[ ' + ( i + 1 ) + ' ] = { "' + addslashes( dialogue ) + '" }\n';
+				return '[ ' + ( i + 1 ) + ' ] = { [[' + dialogue.replace( /NEWLINE/g, '\n' ) + ']] }\n';
 			} ) + '} \nend';
 
 		var filename = __dirname.replace( /\\/g, '/' ) + '/routes/' + matches[ index ].replace(
