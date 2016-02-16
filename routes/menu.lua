@@ -14,7 +14,6 @@ return function( main )
 		'New Game',
 		'Exit'
 	} );
-
 	if ind == 1 then
 		main.set_route( 'beginning-cutscene' );
 	elseif ind == 2 then

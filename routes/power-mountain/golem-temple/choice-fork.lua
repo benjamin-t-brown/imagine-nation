@@ -2,15 +2,14 @@ local display = require( '../display' );
 local c = require( '../common' );
 
 return function( main )
+	local txt = require( 'routes/power-mountain/golem-temple/_choice-fork-text' )();
 	c.setup();
-	local text = { 
-		'You stand at a fork between two identical passages: both clearly man-made. Torches line the walls, draping flickering shadows of rocks across the floor.'
-	};
+	local text = txt[ 1 ]
 
 	if( main.data.conscience.in_party == false ) then
-		text[ #text + 1 ] = 'The voice you heard in the large cavern has stopped.';
+		text[ #text + 1 ] = txt[ 2 ][ 1 ];
 	elseif( c.is_trigger( 'conscience_choice_fork', main ) ) then
-		text[ #text + 1 ] = 'CONSCIENCE: "The door I found is just over to the left, once we get there we can figure out how to get through it!"  She seems a bit too excited for this sort of thing.';
+		text[ #text + 1 ] = txt[ 3 ][ 1 ]
 		c.disable_trigger( 'conscience_choice_fork', main ) ;
 	end
 
@@ -23,7 +22,7 @@ return function( main )
 	c.setup( previous_choice );
 
 	if ind == 1 then
-		c.dialogue( { 'You take the left fork and begin going down a walkway of torches.' }, true );
+		c.dialogue( txt[ 4 ], true );
 		main.set_route( 'power-mountain/golem-temple/left-fork' );
 	elseif ind == 2 then
 		c.dialogue( { 'You take the right fork.' }, true );

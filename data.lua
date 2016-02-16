@@ -1,7 +1,7 @@
 return function()
 	return {
 		route_name = 'menu',
-		player_name = 'Benjamin',
+		player_name = 'Ada',
 		triggers = {
 			conscience_choice_fork = true,
 			saw_door_left_fork = false
