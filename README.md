@@ -1,22 +1,23 @@
-Imagine Nation - Powered by the Illuamination Engine
+## Imagine Nation - Powered by the Illuamination Engine
 
 This is a game that tells the story of a girl who dozed off in class and found herself in 
 a strange, but oddly familiar world.
 
-Platforms: 
+### Platforms: 
+
 	Windows only
 
-Gameplay
+### Gameplay
 
 The game is run like a text-based adventure, however only decisions are made via the
 number keys 1-9.  It is played entirely in the Windows default terminal.
 
-Installation
+### Installation
 
 No installation is required to play.  Simply go into the 'bin' folder and double click 
 'ImagineNation.bat'.
 
-Development
+### Development
 
 To develop on this platform, the following technologies are required:
 
@@ -33,7 +34,7 @@ Game text is stored initially in *.odt (so they can have text color formatting a
 spellcheck for organizational purposes) files which are then converted into *.txt files
 which are then compiled into Lua files.
 
-Screenshots
+### Screenshots
 
 ```
 Powered by the ILUAmination Engine
