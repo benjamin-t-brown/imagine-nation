@@ -1,0 +1,276 @@
+
+  - beginning-cutscene -
+
+  Something does not feel quite right. You had been dozing off, in the
+  intermediate state between asleep and awake, but just now something
+  has made you feel a bit strange. You slowly open your eyes, and to
+  your alarm you discover that you are not in the same place you were
+  when you first closed them. In fact, you have no idea where you are.
+  You cannot remember anything.
+
+  You stand on a large set of rolling plains, the sky above you is
+  speckled with numerous stars that dimly light up the landscape. At a
+  point in the distance you see shimmering light.
+
+  As you appear to have no other recourse, you begin to walk toward this
+  light, although it seems very far away. In fact, your steps do not
+  appear to make a difference in how bright it becomes. It still looms
+  just as far away from when you first perceived it, even as you walk
+  more and more.
+
+  After some time you begin to doubt that you will ever reach the source
+  of that light. You stop and look back into pitch black darkness. It
+  seems your only hope is to continue toward the point and perhaps,
+  eventually, you will you reach it.
+
+  When you turn forward again, you are shocked to see that the light has,
+  somehow, gone from very far away to very close.
+
+  You can see it clearly now. The light comes from what looks like a
+  doorway, but across the threshold is a thin material that seems to
+  shimmer. This is the source of the light. You find it difficult to
+  look away from this gateway. It is enthralling, but somehow it demands
+  your attention. You notice too late that something is pulling you into
+  it, an invisible force, grabing at you and forcing you forward inch by
+  inch. You try to resist, but your efforts are fruitless. The force
+  grows stronger and stronger and you begin to realize that you can do
+  nothing to stop it. It lifts you off of the air, and sucks you into
+  the shimmering surface of the portal...
+
+  - power-mountain/cave/start -
+
+  It is silent. The howling vortex of noise that had been nearly tearing
+  apart your ears just a moment ago has stopped.
+
+  You stand at a dead end in a cave, dimly lit by glowing mushrooms and
+  other fungus. The walls are made of rounded rocks, and are wet to the
+  touch. You can barely make out a way through the cave just ahead of
+  you, although it seems rather dangerous.
+
+  You make your way forward slowly, tripping on outcropped rocks at every
+  step, but you have just enough vision to see where you are going. The
+  cave walls around you slowly start to widen until they eventually give
+  way to a large cave.
+
+  You yell for help as loud as you can, and your voice echoes all around.
+  Nothing else appears to happen.
+
+  - power-mountain/cave/main-cave -
+
+  You stand inside of a massive cavern, cracks on the ceiling allowing
+  slim rays of sunlight to cascade off of the walls. Stalagmites line
+  the ceiling above a pool of water that dominates the majority of the
+  walking space. You see an exit across the pool of water, and you also
+  see a smaller path that leads further underground. You hear a very
+  feint voice, almost not there, calling out from a passageway across
+  the pool.
+
+  You have no idea how deep this pool is. It could be too deep to wade
+  through.
+
+  You find a pebble and toss it into the pool. Eerily, it does not make a
+  splashing sound or any ripples. Something seems very off about this
+  "water".
+
+  You dive into the pool holding firmly onto the plank of dry wood you
+  had found before. It floats up and takes you with it, allowing you to
+  use your feet to kick your way across the water. After a bit of time
+  you are safely on the other bank. You get out of the water sopping wet
+  and continue onward. To your surprise, the passage out is marked with a
+  thick, wooden door that does not have a handle. Luckily it is unlocked
+  and you can push it open, but it is so heavy that it takes a lot of
+  strength to do so. When you finally get through, the door slams shut
+  behind you and astonishingly seems to morph into the wall. All you see
+  now is a large wall of rock. You suppose you have no way back.
+
+  You dive into the pool and realize that this was a mistake. The pool is
+  very deep, and something is not quite right about the water. You cannot
+  float on it; the pool pulls you under even as you are only a few feet
+  from the bank. You kick hard but you are unable to get enough force to
+  float up. You slip deeper and deeper into the water until you fall
+  through a waterfall and land painfully on the cave floor. Gasping for
+  air, you stand up.
+
+  - power-mountain/cave/underground-atrium -
+
+  You stand in a small cavern below the large pool of water in the large
+  cavern above. Water droplets drip noisily from the ceiling, and you
+  get a foreboding sense that the ceiling could collapse on top of you
+  at any moment. The noise of water rushing is coming from a passage to
+  your left, but the passage ahead of you is silent. You can also go up
+  into the large cavern with the pool.
+
+  - power-mountain/cave/underground-waterfall -
+
+  In this cavern, a small waterfall comes out of the ceiling and pushes
+  water into stream that goes into the cave wall. You do not think you
+  could you could force your way through the stream, as the hole is too
+  small and the rocks around it look rather sharp. You can only see one
+  way out.
+
+  - power-mountain/cave/underground-forest -
+
+  You see stream winding its way through this passage, extruding out of
+  the left wall and continuing further on. It seems to be the same water
+  that was in the pool somewhere above you. It blocks your path. A
+  massive tree trunk grows out of one of the walls, its roots firmly
+  entrenched between broken boulders and other thick rocks. The stream
+  goes directly underneath it at one point.
+
+  The stream is very shallow and you have no problem skipping over it.
+  However, once you get to the other side you see clearly that the cave
+  has a very sharp drop off. You follow the stream down the cavern a
+  ways and discover that it makes its way off of the cliff edge. It
+  seems you cannot continue this way. You go back to the entrance of the
+  room.
+
+  You approach the tree.
+
+  It appears to be dead. Its wood is dry, and its roots seem to be
+  withering.
+
+  At second glance, though, you notice something rather odd: the stream
+  brushes up against one of the tree's roots, yet somehow the root is
+  still extremely dry.
+
+  How strange! Upon closer inspection, you see that the stream actually
+  runs beneath the root, which is single-handedly holding up the cave
+  floor above it by floating on the stream. You wonder if there is
+  another pool of water under your feet, and if this tree is the only
+  thing keeping you dry. Perhaps because the tree is so dry, it does not
+  absorb the water and remains buoyant. A piece of the tree's bark juts
+  out from the root. The wood's powerful buoyancy seems useful, so you
+  break it off and carry it with you.
+
+  - power-mountain/golem-temple/start -
+
+  - power-mountain/golem-temple/choice-fork -
+
+  You stand at a fork between two identical passages: both clearly
+  man-made. Torches line the walls, draping flickering shadows of rocks
+  across the floor.
+
+  The voice you heard in the large cavern has stopped.
+
+  CONSCIENCE: "The door I found is just over to the left, once we get
+  there we can figure out how to get through it!" She seems a bit too
+  excited for this sort of thing.
+
+  You take the left fork and begin going down a walkway of torches.
+
+  - power-mountain/golem-temple/left-fork -
+
+  You walk for a few minutes with Conscience happily skipping at your
+  side. She seems thrilled to have a traveling companion, and you have
+  to admit you feel better not having to be alone anymore. You
+  eventually come upon a closed metal door that does not have a handle.
+
+  CONSCIENCE: "This is the door I found!". She rushes over to it, but her
+  excitement turns to dejection in the blink of an eye. "But I still
+  don't know how to get past it." You walk up next to her and survey the
+  door for yourself.
+
+  You decide that you cannot pass this door at the moment.
+
+  CONSCIENCE: "Of course I tried that. It's locked though, you can see
+  for yourself."
+
+  You put some force on the door, which doesn't budge, and note that you
+  probably could not push your way past it.
+
+  CONSCIENCE: "I don't have the slightest clue who put them up or what
+  keeps them lit."
+
+  CONSCIENCE: "Like I said, I am just as lost in this place as you are."
+
+  CONSCIENCE: "I noticed that too. Maybe you aren't supposed to open it
+  with a handle?"
+
+  She pauses a moment to consider the door, and then her face lights up.
+  CONSCIENCE: "That must be it! Maybe we just have to ask it?" Before
+  you can stop her from undertaking such ridiculousness, Conscience has
+  already laid a hand on the outside of the door. "Hello? Mr. Door? It
+  would be super great if you could please open up for us?"
+
+  The door doesn't do anything. You don't want to admit it, but for a
+  moment there you thought that it might have been that easy.
+
+  CONSCIENCE: "Thanks, <player_name>. We'll get through eventually!"
+
+  CONSCIENCE: "If it had worked, I doubt you would be complaining about
+  its silliness."
+
+  CONSCIENCE: "I don't see *you* coming up with any good ideas!"
+
+  At that moment the wall next to the door begins to move. It extrudes
+  out steadily, the rocks grinding together with echoing crumbles. You
+  and Conscience are too surprised to move as you watch the wall slide
+  out and then slowly come to a stop. Then you notice that it is shaped
+  vaugely humanoid: Something like a big, rocky head is lowering down to
+  the both of you, two sockets with glowing gems and a mouth of cobbled
+  together stones. Whatever the thing is, it moves slowly and
+  deliberately, gazing at the two of you for a long moment before
+  speaking in a hoarse, but loud voice.
+
+  ROCK CREATURE: "Why do you make such noise? I require silence for my
+  slumber. It has been agreed."
+
+  You are shocked for only a moment before you manage to regain your
+  composure. When you do, you find Conscience clutching your arm and
+  standing behind you.
+
+  Conscience is too terrified to be of any assistance. Her eyes are wide
+  and her mouth trembles and she cannot seem to say a word.
+
+  The creature does not appear to understand your question.
+
+  ROCK CREATURE: "I am here. I am always here. It has been agreed."
+
+  The creature heaves a sigh, which involves much grinding of boulders
+  and the sound of a wind that you do not feel. It sends shivers down
+  your spine nonetheless.
+
+  ROCK CREATURE: "I am not to be disturbed. It has been agreed."
+
+  It moves its face right next to the both of you; Conscience's
+  fingernails cut into your arm painfully. However, the pose isn't
+  threatening, but seems... considering.
+
+  ROCK CREATURE: "Anger does not befit me. You will leave this temple
+  now. You will not come back. It has been agreed."
+
+  It turns to the door that you and Conscience could not get past and
+  with an effortless nudge, swings it open, slamming it against
+  something on the other side.
+
+  Without another word it swoops the two of you up in its other hand and
+  ushers you out. The door slams shut behind you, the metal ringing
+  loudly, echoing all around. The light of the outside temporarily
+  blinds you and you shield your eyes. When they finally adjust to the
+  sun...
+
+  You walk for a few minutes past row after row of torches until you are
+  forced to stop: the passage onward is marred by a large, metal door.
+  This door, like the previous one you saw, does not appear to have a
+  handle. It looms down on you as if daring you to touch it.
+
+  You notice that the cave floor beneath your feet has turned into a
+  cobblestone path.
+
+  You decide that you cannot pass this door at the moment.
+
+  At first you nudge the door and find that it is locked tight. You then
+  push harder and harder, but your feet slip on the rock beneath you. It
+  looks like you aren't strong enough to push it open.
+
+  You kick the door and receive a throbbing pain in your toe,
+  accomplishing little else. The door remains as tightly shut as when
+  you first saw it.
+
+  You chuck the plank of wood at the door. It makes a loud "clank" and
+  falls to the floor. You swear you hear a brief sound, like the
+  grinding of rocks, but when you freeze and look around, you do not see
+  anything.
+
+  - power-mountain/golem-temple/right-fork -
+
