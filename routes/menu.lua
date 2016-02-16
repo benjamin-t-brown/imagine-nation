@@ -1,6 +1,6 @@
 local logo = require( 'pics/logo' );
-local display = require( 'display' );
-local c = require( 'common' );
+local display = require( 'illuamination/display' );
+local c = require( 'illuamination/common' );
 
 return function( main )
 	c.setup();
@@ -14,7 +14,6 @@ return function( main )
 		'New Game',
 		'Exit'
 	} );
-
 	if ind == 1 then
 		main.set_route( 'beginning-cutscene' );
 	elseif ind == 2 then

@@ -1,6 +1,6 @@
-local display = require( '../display' );
-local c = require( '../common' );
-local conscience = require( '../pics/conscience' );
+local display = require( 'illuamination/display' );
+local c = require( 'illuamination/common' );
+local conscience = require( 'pics/conscience' );
 
 local function with_conscience_in_party( main )
 	c.dialogue( {
