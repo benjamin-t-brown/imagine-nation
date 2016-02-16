@@ -3,9 +3,9 @@
 This is a game that tells the story of a girl who dozed off in class and found herself in 
 a strange, but oddly familiar world.
 
-### Platforms: 
+### Platforms:
 
-	Windows only
+	Windows
 
 ### Gameplay
 
@@ -22,7 +22,9 @@ No installation is required to play.  Simply go into the 'bin' folder and double
 To develop on this platform, the following technologies are required:
 
 [Node](https://nodejs.org/en/) - This is used to compile text into lua files
+
 [Mingw](http://www.mingw.org/) - This is required for 'make'
+
 [OpenOffice*](https://www.openoffice.org/)
 
 *Any program that can edit *.odt files will work.
