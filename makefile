@@ -10,6 +10,13 @@ all: $(EMP)
 %:
 	odt2txt.exe --width=70 --output=$*.txt $*.odt
 	node compile-text.js $*.txt
-
-clean:
 	rm -f $(TXT)
+
+cleantxt:
+	rm -f $(TXT)
+
+cleanlua:
+	echo 'clean lua'
+
+clean: cleantxt
+	
