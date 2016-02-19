@@ -12,7 +12,6 @@ var is_comment = function( txt ){
 var compile = function( text ) {
 	var matches = text.match( /\- (.*) \-/g );
 	var contents = text.split( /\- .*? \-/g ).slice( 1 );
-	var offset = 0;
 
 	contents.forEach( function( subtext, index ) {
 		subtext = subtext
@@ -20,6 +19,8 @@ var compile = function( text ) {
 			.replace( /\n\n/g, SPLSTR )
 			.replace( /\n/g, NEWLINE )
 			.replace( /(“|”)/g, '"' );
+
+		var offset = 0;
 
 		var ret = 'return function() \nreturn {\n' + subtext.split( SPLSTR ).slice( 1, -1 ).map(
 			function( dialogue, i ) {
