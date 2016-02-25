@@ -19,7 +19,7 @@ return {
   Forest and across the Misted Plains where some magical force exists
   that keeps this world moving." He pauses to consider. "At least that's
   what I have been told. Never been there myself."]] },
-[ 8 ] = { [[  OLIVER: "Trammel?" he asks. "No never heard of 'im."]] },
+[ 8 ] = { [[  OLIVER: "Spectre?" he asks. "No never heard of 'im."]] },
 [ 9 ] = { [[  OLIVER: "As far as I know, she lives by the Town Hall. Don't know
   exactly where though, I don't really keep tabs on her; not worth the
   effort." He seems disinterested in the subject.]] },

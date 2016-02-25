@@ -1,0 +1,48 @@
+{
+  "name": "ILUAmination Web Interface for Imagine Nation",
+  "version": "0.1.0",
+  "description": "A web interface for playing the ILUAmination game Imagine Nation.",
+  "main": "build/main.js",
+  "readme": "readme",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/benjamin-t-brown/imagine-nation.git"
+  },
+  "dependencies": {
+    "react": "^0.14.0",
+    "react-dom": "^0.14.0",
+  },
+  "devDependencies": {
+    "babel-eslint": "^4.1.6",
+    "browserify": "^11.2.0",
+    "uglify-js": "^2.6.1",
+    "watchify": "^3.4.0",
+    "minimist": "^1.2.0"
+  },
+  "config": {
+    "vendor_modules": [
+      "react-slider",
+      "radium",
+      "react",
+      "react-dom"
+    ],
+    "bundles": {
+      "vendor": "build/vendor.js",
+      "main": {
+        "out": "build/main.js",
+        "entry": "src/index.js"
+      }
+    }
+  },
+  "scripts": {
+    "build-vendor": "node build.js build-vendor",
+    "build-onboard": "node build.js build-onboard",
+    "build": "node build.js build",
+    "server": "node server",
+    "watch": "node build.js watch",
+    "clean": "node build.js clean"
+  },
+  "author": "Benjamin Brown",
+  "license": "UNLICENSED"
+}

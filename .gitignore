@@ -1,3 +1,6 @@
 *.txt
 *.odt#
 bin/out.lua
+www/build/main.js
+www/build/vendor.js
+www/node_modules
