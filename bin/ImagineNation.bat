@@ -1,1 +1,1 @@
-..\lua-interpreter.exe ..\main.lua
+..\lua-interpreter.exe ../init.lua

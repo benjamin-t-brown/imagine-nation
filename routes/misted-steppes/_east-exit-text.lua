@@ -13,24 +13,27 @@ return {
 [ 4 ] = { [[  CONSCIENCE: "Yes," she says, looking in awe out at the mist. "But I
   have only been at the edge. I've never gone through it." She looks up
   at you with determination. "But we have to go through now."]] },
-[ 5 ] = { [[  CONSCIENCE: "You are right. I'm not scared. It's hard for me to
+[ 5 ] = { [[  – What is it?]] },
+[ 6 ] = { [[  CONSCIENCE: "I don't know. But it has been in the world since forever.
+  It never does anything, it's just there."]] },
+[ 7 ] = { [[  CONSCIENCE: "You are right. I'm not scared. It's hard for me to
   explain... I don't think it's an evil mist. It's just there, you
   know?"]] },
-[ 6 ] = { [[  CONSCIENCE: "I don't have any idea. Maybe we'll understand when we
+[ 8 ] = { [[  CONSCIENCE: "I don't have any idea. Maybe we'll understand when we
   start walking."]] },
-[ 7 ] = { [[  You stand at the east threshold of the Misted Steppes, the silky, white
+[ 9 ] = { [[  You stand at the east threshold of the Misted Steppes, the silky, white
   fog swirling about. The only other direction you can easily go is is
   through a valley to the west.]] },
-[ 8 ] = { [[  CONSCIENCE: "Before we go, there's one thing I haven't told you." You
+[ 10 ] = { [[  CONSCIENCE: "Before we go, there's one thing I haven't told you." You
   pause and look back at her. She takes a deep breath. "Logos told me
   once how to escape from the mist. He told me that if you think that
   you're lost and you want to leave, all you have to do is close your
   eyes and imagine the last place you were, and the mist will take you
   there."]] },
-[ 9 ] = { [[  CONSCIENCE: "You should keep a more open mind in here."]] },
-[ 10 ] = { [[  CONSCIENCE: "Just remember, if you think we are lost, tell me, and I
+[ 11 ] = { [[  CONSCIENCE: "You should keep a more open mind in here."]] },
+[ 12 ] = { [[  CONSCIENCE: "Just remember, if you think we are lost, tell me, and I
   might be able to put us back where we started."]] },
-[ 11 ] = { [[  You step into the mist.]] },
-[ 12 ] = { [[  You leave the threshold to the Misted Steppes.]] },
+[ 13 ] = { [[  You step into the mist.]] },
+[ 14 ] = { [[  You leave the threshold to the Misted Steppes.]] },
 } 
 end

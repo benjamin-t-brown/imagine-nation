@@ -1,2 +1,3 @@
 *.txt
 *.odt#
+bin/out.lua
