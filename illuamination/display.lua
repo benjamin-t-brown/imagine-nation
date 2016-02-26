@@ -1,9 +1,19 @@
+local INPUT_MODE = 0;
+
 display = {
 
+set_input_mode = function( n )
+	INPUT_MODE = n;
+end,
+
 clear = function()
-	io.write( '♀' );
-	io.flush();
-	os.execute( 'cls' ); 
+	if( INPUT_MODE == 0 ) then
+		io.write( '♀' );
+		io.flush();
+		os.execute( 'cls' );
+	else
+
+	end;
 end,
 
 para = function()
@@ -17,7 +27,11 @@ ln = function()
 end,
 
 draw_title = function()
-	display.draw_string( 'Powered by the ILUAmination Engine\n' );
+	if( INPUT_MODE == 0 ) then
+		display.draw_string( 'Powered by the ILUAmination Engine\n' );
+	else
+
+	end;
 end,
 
 draw_string = function( str )

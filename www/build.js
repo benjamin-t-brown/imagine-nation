@@ -24,38 +24,6 @@ var rules = {
 		_execute( cmd, cb );
 	},
 
-	'build-maps': function( cb ) {
-		var parent_dir = __dirname + '/../maps';
-		var reqs = 0;
-		var exec_error = null;
-
-		var _on_meta_created = function( err ) {
-			exec_error = err || exec_error;
-			reqs--;
-			if( reqs === 0 ) {
-				cb( exec_error );
-			}
-		};
-
-		fs.readdir( parent_dir, function( err, files ) {
-			if( err ) {
-				cb( err );
-			} else {
-				for( var i in files ) {
-					var name = files[ i ];
-					if( /.json$/.test( name ) && name.indexOf( '-meta.json' ) === -1 ) {
-						var file = parent_dir + '/' + files[ i ];
-						reqs++;
-						_execute( `node ./src/create-metadata/index.js --map "${file}"`, _on_meta_created );
-					}
-				}
-				if( reqs === 0 ) {
-					cb();
-				}
-			}
-		} );
-	},
-
 	'build-vendor': function( cb ) {
 		var vendor_bundle = process.env.npm_package_config_bundles_vendor;
 		var cmd = `${NODE_PATH} browserify ${_vendor_exports().join(' ')} | uglifyjs -c --screw-ie8 > ${vendor_bundle}`;

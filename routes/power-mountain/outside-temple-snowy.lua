@@ -164,7 +164,7 @@ return function( main )
 			'CONSCIENCE: "It\'s just... A place that is important to the world."'
 		}, true );
 		c.dialogue( { 
-			'CONSCIENCE: "I don\t really know how, but the Temple of Power is what makes this world keep living, and it would be easy to accidently mess something up here. Then a whole lot of stuff could go wrong.  So, everybody says that nobody should come here, ever.  That way, nothing accidental happens.  Nothing bad happens."'
+			'CONSCIENCE: "I don\'t really know how, but the Temple of Power is what makes this world keep living, and it would be easy to accidently mess something up here. Then a whole lot of stuff could go wrong.  So, everybody says that nobody should come here, ever.  That way, nothing accidental happens.  Nothing bad happens."'
 		}, true );
 		c.dialogue( { 
 			'You look up at the mountains around you, and the door you just came from, wondering what could be in this place, this Temple of Power, that people would be afraid of disturbing.  Perhaps that ugly rock monster had something to do with it.'

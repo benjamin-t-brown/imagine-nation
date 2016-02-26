@@ -2,7 +2,7 @@ local utils = require( 'illuamination/utils' );
 local display = require( 'illuamination/display' );
 local c = require( 'illuamination/common' );
 require( 'illuamination/data' );
-require( 'illuamination/input' );
+local input = require( 'illuamination/input' );
 
 -- function Tile:new( pic )
 -- 	local o = {
@@ -16,6 +16,10 @@ require( 'illuamination/input' );
 local route = require( 'routes/menu' );
 local route2 = nil;
 local has_route = true;
+
+if( arg[1] == '1' ) then
+	input.set_input_mode( 1 );
+end;
 
 main = {
 
