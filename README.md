@@ -34,7 +34,8 @@ herself in a strange, but oddly familiar world.
 ### Gameplay
 
 The game is run like a text-based adventure, however only decisions are made via the
-number keys 1-9.  It is played entirely in the Windows default terminal.
+number keys 1-9.  It is played entirely in the Windows default terminal or via the web
+interface.
 
 ### Installation
 

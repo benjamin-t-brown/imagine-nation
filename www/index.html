@@ -3,13 +3,53 @@
 <head>
     <title>ImagineNation (Powered By the ILUAmination Engine)</title>
 </head>
-
-<body style="margin:10px; background-color:black">
+<style>
+html{ 
+	font-size:1.8rem; 
+} 
+body{
+	margin-top:10px;
+	margin-bottom:10px;
+	margin-left:0px;
+	margin-right:0px;
+	width: calc( 100% - 10px );
+	height: calc( 100% - 10px ); 
+	background-color:black; 
+	overflow-x:hidden; 
+	overflow-y:hidden;
+}
+.no-select {
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-tap-highlight-color: transparent;
+}
+.button {
+	line-height: 1.9;
+	font-family: monospace;
+	margin: 5px;
+	padding: 3px;
+	text-align: center;
+	background-color: white;
+	color: black;
+	border: 2px solid #AAAAAA;
+}
+.button:active {
+	background-color: #AAAAAA;
+}
+.button:hover {
+	background-color: #DDDDDD;
+}
+</style>
+<body>
 </body>
 <footer>
     <script type="text/javascript" src="/socket.io/socket.io.js"></script>
     <script type="text/javascript" src="build/vendor.js"></script>
     <script type="text/javascript" src="build/main.js"></script>
+
 </footer>
 
 </html>

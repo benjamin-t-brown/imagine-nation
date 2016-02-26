@@ -4,6 +4,35 @@ var React = require( 'react' );
 var ReactDOM = require( 'react-dom' );
 var io = require( './io' );
 
+var ChoicesContainer = React.createClass( {
+	displayName: 'ChoicesContainer',
+	handleClick: function( choice_index, e ){
+		io.send( 'keypress', String( choice_index ) );
+		e.stopPropagation();
+		e.preventDefault();
+	},
+	render: function(){
+		var elems = this.props.choices.map( function( choice_text, i ){
+			return React.DOM.div( {
+				key: i,
+				onClick: this.handleClick.bind( null, i + 1 ),
+				onTouchEnd: this.handleClick.bind( null, i + 1 ),
+				className: 'no-select button'
+			}, choice_text );
+		}.bind( this ) );
+		return React.DOM.div( {
+			className: 'no-select',
+			style:{
+				backgroundColor: '#555555',
+				textAlign: 'center',
+				cursor: 'pointer',
+				width: '100%',
+				height: '30%'
+			}
+		}, elems );
+	}
+} );
+
 var MainContainer = React.createClass( {
 	displayName: 'MainContainer',
 	getInitialState: function() {
@@ -12,6 +41,7 @@ var MainContainer = React.createClass( {
 		io.on( 'readyState', this.handleReadyStateChange );
 		return {
 			text: 'Connecting...',
+			choices: [],
 			readyForInput: true
 		};
 	},
@@ -21,13 +51,23 @@ var MainContainer = React.createClass( {
 		} );
 	},
 	handleOutputChange: function( text ) {
+		text = text || '';
+		window.text = text;
+		text = text.replace( /Press enter to continue.../g, '' );
+		console.log( text );
 		var old_text = this.state.text;
-		if( old_text > 10000 ){
+		if( old_text > 10000 ) {
 			old_text = old_text.slice( text.length );
 		}
-		text = text.replace( /Press enter to continue.../g, '' );
+		var choices_ind = text.indexOf( '==========' );
+		var choices = [ 'Continue' ];
+		if( choices_ind > -1 ) {
+			choices = text.slice( choices_ind ).slice( 52, -53 ).split( '\n' );
+			text = text.slice( 0, choices_ind );
+		}
 		this.setState( {
-			text: old_text + text
+			text: old_text + text,
+			choices: choices
 		} );
 	},
 	handleReadyStateChange: function( state ) {
@@ -36,7 +76,6 @@ var MainContainer = React.createClass( {
 		} );
 	},
 	handleKeyDown: function( e ) {
-		console.log( 'KEYDOWN', String.fromCharCode( e.which ) );
 		if( this.state.readyForInput ) {
 			io.send( 'keypress', String.fromCharCode( e.which ) );
 		}
@@ -44,25 +83,39 @@ var MainContainer = React.createClass( {
 	componentDidMount: function() {
 		window.addEventListener( 'keydown', this.handleKeyDown );
 	},
-	componentDidUpdate: function() {
-		var node = ReactDOM.findDOMNode( this );
-		document.body.scrollTop = node.scrollHeight;
-	},
 	render: function() {
 		var html = '<pre style="white-space: pre-wrap">' + this.state.text + '</pre>';
 		return React.DOM.div( {
-			style: {
-				minHeight: '100%',
-				fontFamily: 'monospace',
-				fontSize: '16px',
-				width: '100%',
-				backgroundColor: 'black',
-				color: 'white'
+				style: {
+					height: '100%',
+					backgroundColor: 'black',
+					color: 'white'
+				},
 			},
-			dangerouslySetInnerHTML: {
-				__html: html
-			}
-		} );
+			React.DOM.div( {
+				ref: function( node ){
+					if( node ){
+						node.scrollTop = node.scrollHeight;
+					}
+				},
+				style: {
+					height: '70%',
+					overflowY: 'scroll',
+					fontFamily: 'monospace',
+					marginLeft: '10px',
+					marginRight: '10px',
+					width: 'calc( 100% - 10px )',
+					backgroundColor: 'black',
+					color: 'white'
+				},
+				dangerouslySetInnerHTML: {
+					__html: html
+				}
+			} ),
+			React.createElement( ChoicesContainer, {
+				choices: this.state.choices
+			} )
+		);
 	}
 } );
 
