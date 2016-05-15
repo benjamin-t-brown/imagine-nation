@@ -38,10 +38,10 @@ data = require( 'illuamination/data' )();
 };
 
 local save = require( 'illuamination/data' )();
-save.conscience.in_party = true;
+--save.conscience.in_party = true;
 --save.conscience.standing = 11;
 --table.insert( save.inventory, 1, 'Dry Wood' );
-save.route_name = 'power-mountain/outside-temple-snowy';
+--save.route_name = 'power-mountain/outside-temple-snowy';
 --save.route_name = 'power-mountain/cave/main-cave';
 c.load_save( save, main );
 

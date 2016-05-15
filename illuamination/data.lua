@@ -1,6 +1,6 @@
 return function()
 	return {
-		route_name = 'menu',
+		route_name = 'power-mountain/golem-temple/choice-fork',
 		player_name = 'Ada',
 		triggers = {
 			conscience_choice_fork = true,

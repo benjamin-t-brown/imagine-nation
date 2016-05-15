@@ -118,6 +118,7 @@ local function with_conscience_in_party( main )
 end
 
 local function without_conscience_in_party( main )
+	local txt = require( 'routes/power-mountain/golem-temple/_left-fork-text' )();
 	c.enable_trigger( 'saw_door_left_fork', main );
 
 	local choices = {
@@ -130,9 +131,7 @@ local function without_conscience_in_party( main )
 	end
 
 	c.pic( door.door_closed() );
-
-	c.dialogue( txt[ 25 ], true );
-	c.dialogue( txt[ 26 ] );
+	c.dialogue( txt[ 26 ], true );
 
 	::beginning_of_sequence::
 
