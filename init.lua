@@ -43,7 +43,7 @@ local save = require( 'illuamination/data' )();
 --table.insert( save.inventory, 1, 'Dry Wood' );
 --save.route_name = 'power-mountain/outside-temple-snowy';
 --save.route_name = 'power-mountain/cave/main-cave';
-c.load_save( save, main );
+--c.load_save( save, main );
 
 while has_route do
 	if( route2 ~= nil ) then
