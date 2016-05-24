@@ -13,7 +13,7 @@ winston.debug( 'WINDOWS?', IS_WINDOWS );
 
 var Game = function( socket ) {
 	this.socket = socket;
-	var cmd = 'cd ' + __dirname + '\\..\\..\\ && ' + ( IS_WINDOWS ? 'lua-interpreter.exe' : 'lua' ) + ' init.lua 1';
+	var cmd = 'cd ' + __dirname + '/../../ && ' + ( IS_WINDOWS ? 'lua-interpreter.exe' : 'lua' ) + ' init.lua 1';
 	console.log( 'EXEC', cmd );
 	this.child = exec( cmd );
 	this.child.stdout.on( 'data', function( data ) {
