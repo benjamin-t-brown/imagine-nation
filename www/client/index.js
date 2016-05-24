@@ -99,7 +99,7 @@ var MainContainer = React.createClass( {
 					}
 				},
 				style: {
-					height: '70%',
+					height: '75%',
 					overflowY: 'scroll',
 					fontFamily: 'monospace',
 					marginLeft: '10px',
