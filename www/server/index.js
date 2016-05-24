@@ -9,12 +9,12 @@ var games = {};
 
 var IS_WINDOWS = process.env.NODE.search( 'exe' ) > -1;
 
-winston.debug( 'WINDOWS?', IS_WINDOWS );
+winston.info( 'WINDOWS?', IS_WINDOWS );
 
 var Game = function( socket ) {
 	this.socket = socket;
 	var cmd = 'cd ' + __dirname + '/../../ && ' + ( IS_WINDOWS ? 'lua-interpreter.exe' : 'lua' ) + ' init.lua 1';
-	console.log( 'EXEC', cmd );
+	winston.info( 'EXEC', cmd );
 	this.child = exec( cmd );
 	this.child.stdout.on( 'data', function( data ) {
 		var str = data.toString();
@@ -23,7 +23,7 @@ var Game = function( socket ) {
 			io_server.send( this.socket, 'clear' );
 		}
 
-		winston.debug( 'str', str );
+		winston.info( 'str', str );
 
 		io_server.send( this.socket, 'output', str );
 		io_server.send( this.socket, 'readyForInput', true );
@@ -43,7 +43,7 @@ Game.prototype.write = function( key ) {
 };
 
 Game.prototype.end = function() {
-	console.log( 'Game stopped', this.socket.id );
+	winston.info( 'Game stopped', this.socket.id );
 	this.child.stdin.write( 'exit\r\n' );
 };
 
@@ -58,6 +58,7 @@ io_server.on( 'connection', function( _, socket ) {
 		games[ socket.id ].end();
 		delete games[ socket.id ];
 	}
+	winston.info( 'New connection', socket.id );
 	games[ socket.id ] = new Game( socket );
 } );
 
@@ -65,11 +66,13 @@ io_server.on( 'disconnection', function( _, socket ) {
 	if( games[ socket.id ] ) {
 		games[ socket.id ].end();
 		delete games[ socket.id ];
+		winston.info( 'Disconnection', socket.id );
 	}
 } );
 
 io_server.on( 'keypress', function( key, socket ) {
 	if( games[ socket.id ] ) {
+		winston.info( 'Command', key, socket.id );
 		games[ socket.id ].write( key );
 	}
 } );
