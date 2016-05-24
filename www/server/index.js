@@ -36,15 +36,15 @@ var Game = function( socket ) {
 
 Game.prototype.write = function( key ) {
 	if( '0123456789'.indexOf( key ) > -1 ) {
-		this.child.stdin.write( key + '\r\n' );
+		this.child.stdin.write( key + '\n' );
 	} else {
-		this.child.stdin.write( '\r\n' );
+		this.child.stdin.write( '\n' );
 	}
 };
 
 Game.prototype.end = function() {
 	winston.info( 'Game stopped', this.socket.id );
-	this.child.stdin.write( 'exit\r\n' );
+	this.child.stdin.write( 'exit\n' );
 };
 
 var PORT = 8080;

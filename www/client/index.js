@@ -59,11 +59,14 @@ var MainContainer = React.createClass( {
 		if( old_text > 10000 ) {
 			old_text = old_text.slice( text.length );
 		}
-		var choices_ind = text.indexOf( '==========' );
+
+		var i1 = text.indexOf( '==================================================' );
+		var i2 = text.lastIndexOf( '==================================================' );
+
 		var choices = [ 'Continue' ];
-		if( choices_ind > -1 ) {
-			choices = text.slice( choices_ind ).slice( 52, -53 ).split( '\n' );
-			text = text.slice( 0, choices_ind );
+		if( i1 > -1 ) {
+			choices = text.slice( i1, i2 ).slice( 51, -1 ).split( '\n' );
+			text = text.slice( 0, i1 );
 		}
 		this.setState( {
 			text: old_text + text,
