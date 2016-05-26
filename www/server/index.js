@@ -23,7 +23,7 @@ var Game = function( socket ) {
 			io_server.send( this.socket, 'clear' );
 		}
 
-		winston.info( 'str', str );
+		winston.info( 'str:\n', str );
 
 		io_server.send( this.socket, 'output', str );
 		io_server.send( this.socket, 'readyForInput', true );
@@ -72,7 +72,6 @@ io_server.on( 'disconnection', function( _, socket ) {
 
 io_server.on( 'keypress', function( key, socket ) {
 	if( games[ socket.id ] ) {
-		winston.info( 'Command', key, socket.id );
 		games[ socket.id ].write( key );
 	}
 } );

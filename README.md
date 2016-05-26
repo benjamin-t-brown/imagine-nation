@@ -27,9 +27,12 @@ Powered by the ILUAmination Engine
 This is an adventure game that tells the story of a girl who dozed off in class and found
 herself in a strange, but oddly familiar world.
 
+[Live Demo](http://fable.digital:8080)
+
 ### Platforms:
 
 	Windows
+	Linux (Server Side Only)
 
 ### Gameplay
 

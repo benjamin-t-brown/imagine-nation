@@ -5,7 +5,7 @@ local cave = require( 'pics/cave' );
 local conscience = require( 'pics/conscience' );
 
 local function with_conscience_in_party( main )
-	local txt = require( 'routes/power-mountain/golem-temple/_left-fork-text' )();
+	local txt = require( 'routes/power-mountain/golem-temple/_left-fork-text' )( );
 	c.pic( door.door_closed() );
 
 	c.dialogue( txt[ 1 ], true );
@@ -16,7 +16,7 @@ local function with_conscience_in_party( main )
 		[1] = 'Go back.',
 		[2] = 'Did you try pushing it open?',
 		[3] = 'Why isn\'t there any handle on this door?',
-		[4] = 'Who put up all of these torches?'	
+		[4] = 'Who put up all of these torches?'
 	};
 
 	::beginning_of_sequence::
@@ -29,9 +29,9 @@ local function with_conscience_in_party( main )
 		return main.set_route( 'power-mountain/golem-temple/choice-fork' );
 	elseif( key == 2 ) then
 		c.pic( conscience.unamused() );
-		c.dialogue( txt[ 4 ], true );	
+		c.dialogue( txt[ 4 ], true );
 		c.dialogue( txt[ 5 ] );
-		choices[ 2 ] = nil;	
+		choices[ 2 ] = nil;
 		goto beginning_of_sequence;
 	elseif( key == 3 ) then
 		-- this is the correct choice
@@ -59,14 +59,14 @@ local function with_conscience_in_party( main )
 	if( key == 1 ) then
 		c.pic( conscience.determined() );
 		c.modify_standing( 3, 'conscience', main );
-		c.dialogue(txt[ 11 ], true );	
+		c.dialogue( txt[ 11 ], true );
 	elseif( key == 2 ) then
 		c.pic( conscience.unamused() );
-		c.dialogue( txt[ 12 ], true );		
-	elseif( key == 3 ) then 
+		c.dialogue( txt[ 12 ], true );
+	elseif( key == 3 ) then
 		c.pic( conscience.angry() );
-		c.modify_standing( -3, 'conscience', main );
-		c.dialogue( txt[ 13 ], true );	
+		c.modify_standing( - 3, 'conscience', main );
+		c.dialogue( txt[ 13 ], true );
 	end
 
 	c.dialogue( txt[ 14 ], true );
@@ -90,14 +90,14 @@ local function with_conscience_in_party( main )
 		c.dialogue( txt[ 17 ] );
 		choices[1] = nil;
 		goto rock_creature_enters;
-	elseif( key == 2 ) then 
+	elseif( key == 2 ) then
 		c.setup();
 		c.pic( cave.rockCreature() );
 		c.dialogue( txt[ 18 ] );
 		c.dialogue( txt[ 19 ] );
 		choices[2] = nil;
 		goto rock_creature_enters;
-	elseif( key == 3 ) then 
+	elseif( key == 3 ) then
 		--continue onward
 	end
 
@@ -118,13 +118,13 @@ local function with_conscience_in_party( main )
 end
 
 local function without_conscience_in_party( main )
-	local txt = require( 'routes/power-mountain/golem-temple/_left-fork-text' )();
+	local txt = require( 'routes/power-mountain/golem-temple/_left-fork-text' )( );
 	c.enable_trigger( 'saw_door_left_fork', main );
 
 	local choices = {
 		[1] = 'Go back.',
 		[2] = 'Push the door open.',
-		[3] = 'Kick the door open.'	
+		[3] = 'Kick the door open.'
 	};
 	if( c.inventory_contains( 'Dry Wood', main ) ) then
 		choices[ 4 ] = 'Throw the Dry Wood at the door.';
@@ -166,3 +166,4 @@ return function( main )
 		without_conscience_in_party( main );
 	end
 end
+

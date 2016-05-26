@@ -1,6 +1,7 @@
 local utils = require( 'illuamination/utils' );
 local display = require( 'illuamination/display' );
 local c = require( 'illuamination/common' );
+
 require( 'illuamination/data' );
 local input = require( 'illuamination/input' );
 
@@ -23,21 +24,21 @@ end;
 
 main = {
 
-set_route = function( route_name )
-	if( route_name ) then
-		main.data.route_name = route_name;
-		route2 = require( 'routes/' .. route_name );
-	else 
-		route2 = nil;
-		has_route = false
-	end
-end,
+	set_route = function( route_name )
+		if( route_name ) then
+			main.data.route_name = route_name;
+			route2 = require( 'routes/' .. route_name );
+		else
+			route2 = nil;
+			has_route = false
+		end
+	end,
 
-data = require( 'illuamination/data' )();
+	data = require( 'illuamination/data' )( );
 
 };
 
-local save = require( 'illuamination/data' )();
+local save = require( 'illuamination/data' )( );
 --save.conscience.in_party = true;
 --save.conscience.standing = 11;
 --table.insert( save.inventory, 1, 'Dry Wood' );
@@ -54,6 +55,7 @@ while has_route do
 end
 
 c.dialogue( {
-	'PROGRAM OVER',
+	'PROGRAM OVER' ,
 	'...Or is it?'
 }, true );
+

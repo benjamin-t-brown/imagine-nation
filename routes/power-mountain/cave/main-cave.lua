@@ -3,7 +3,7 @@ local c = require( 'illuamination/common' );
 local utils = require( 'illuamination/utils' );
 
 return function( main )
-	local txt = require( 'routes/power-mountain/cave/_main-cave-text' )();
+	local txt = require( 'routes/power-mountain/cave/_main-cave-text' )( );
 	c.setup();
 
 	local text = txt[ 1 ];
@@ -52,3 +52,4 @@ return function( main )
 	end
 
 end
+
